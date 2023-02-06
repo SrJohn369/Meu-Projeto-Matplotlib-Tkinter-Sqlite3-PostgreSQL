@@ -3,10 +3,6 @@ import sqlite3 as SQLite
 from time import sleep  # Apenas para uma visualização mais suave do processo no terminal.
 import pandas as pd     # Apenas para uma visualização melhor da tabela no terminal.
 
-# DICIONÁRIO PARA AJUDAR A ADICIONAR OS MESES
-listaDeMeses = {1: 'Janeiro', 2: 'Fevereiro', 3: 'Março', 4: 'Abril', 5: 'Maio', 6: 'Junho',
-                7: 'Julho', 8: 'Agosto', 9: 'Setembro', 10: 'Outubro', 11: 'Novembro', 12: 'Dezembro'}
-
 # CRIA UM BANCO DE DADOS E UMA VARIÁVEL PARA O CURSOR, PARA EXECUTAR OS COMANDOS SQLite
 banco = SQLite.connect("testeDATABSE.db"); print("Abrindo banco de dados...")
 cursor = banco.cursor()
